@@ -6,88 +6,18 @@
 
 	<!-- bean definitions here -->
 	
-	
-	  <bean name="add" class="com.my.spring.model.Address">
-	
-	<property name="city" value="Noida"/>
-	<property name="state" value="UP"/>
-	
+	<bean name="add" class="com.my.spring.model.Address">
+		<property name="city" value="Noida" />
+		<property name="state" value="UP" />
 	</bean>
 	
-	
+	<bean name="emp1" class="com.my.spring.model.Employee" autowire="byType" scope="prototype">
+		<property name="id" value="1011" />
+		<property name="name" value="Atul" />
+		<property name="gender" value="male" />
+	</bean>
 
-	<bean name="emp1" class="com.my.spring.model.Employee">
-	
-	<property name="id" value="1077"/>
-	<property name="name" value="Atul"/>
-	<property name="gender" value="male"/>
-	<property name="address" ref="add"/>
-	<property name="mylist">
-	
-	<list>
-	<value>65477</value>
-	<value>65478</value>
-	<value>65477</value>
-	<value>65479</value>
-		
-	</list>
-	</property>
-	
-	<property name="setOfContacts">
-	<set>
-	<value>65477</value>
-	<value>65478</value>
-	<value>65477</value>
-	<value>65479</value>
-	
-	
-	
-	</set>
-	
-	
-	
-	</property>
-	
-	<property name="map">
-	<map>
-	<entry key="1" value="One"/>
-	<entry key="2" value="Two"/>
-	<entry key="3" value="Three"/>
-	<entry key="4" value="four"/>
-	<entry key="1" value="ONE"/>
-	
-	
-	</map>
-	
-	
-	
-	
-	</property>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	</bean>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
 
 </beans>

@@ -1,7 +1,9 @@
 package com.my.spring.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-
+@Component
 public class Employee {
 	
 	private int id;
@@ -43,7 +45,7 @@ public class Employee {
 	}
 
 
-
+	@Autowired
 	public void setAddress(Address address) {
 		System.out.println("setter call address");
 		this.address = address;
